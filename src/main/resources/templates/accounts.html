@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="end" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+
+<title>Spring Boot keycloak integration example</title>
+<style>
+.banner {
+	font-size: 2.7rem;
+	margin: 0;
+	padding: 2rem 1rem;
+	background-color: #00A1E2;
+	color: white;
+}
+</style>
+</head>
+<body>
+
+	<div class="banner lead">accountDetails secured with KeyCloak !!!</div>
+	<!-- Grey with black text -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<ul class="navbar-nav w-100">
+
+			<li class="nav-item "><a class="nav-link" href="/account-list">Accounts</a>
+			</li>
+			<li class="nav-item dropdown ml-auto"><a class="nav-link"
+				href="/logout">Logout</a></li>
+
+		</ul>
+	</nav>
+	<div class="contact">
+		<div class="container">
+			<legend>
+				List of Accounts <span style="font-size: 30px; color: blue"></span>
+			</legend>
+			<div class="table-responsive">
+				<table class="table table-dark table-striped">
+					<thead>
+						<tr>
+							<th>Account Number</th>
+							<th>AccountHolder's name</th>
+							<th>Balance Amount</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1234</td>
+							<td>Siraj Udhav</td>
+							<td>300000</td>
+						</tr>
+						<tr>
+							<td>6789</td>
+							<td>Rashwin Sirmour</td>
+							<td>346000</td>
+						</tr>
+						<tr>
+							<td>4502</td>
+							<td>Olly Stone</td>
+							<td>99265</td>
+						</tr>
+						<tr>
+							<td>4502</td>
+							<td>Ben Hoakes</td>
+							<td>450000</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+		<div class="text-center ">
+			<h3>Connect us :</h3>
+			<p>
+				For support or any questions: <br></br>Email @ <a
+					href="mailto:ghatak.20@gmail.com" target="_blank">ghatak.20@gmail.com</a>
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#productAll').dataTable();
+		});
+	</script>
+
+</body>
+</html>
